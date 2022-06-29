@@ -1,0 +1,29 @@
+a {
+  text-decoration: none;
+  font-family: monospace;
+}
+
+a:visited {
+  color: #CCCCCC;
+}
+
+nav {
+  padding: 12px;
+  margin: 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+
+.text-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
