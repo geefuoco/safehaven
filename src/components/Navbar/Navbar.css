@@ -14,10 +14,17 @@ nav {
 
 .nav-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 100px;
+  align-items: center;
 }
 
+.links-wrapper {
+  display: flex;
+}
+.main-title {
+  font-size: 28px;
+}
 
 .text-link {
   display: flex;

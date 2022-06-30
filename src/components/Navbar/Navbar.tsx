@@ -11,8 +11,16 @@ const Navbar: React.FC = () => {
             <h1 className="main-title">Safe Haven</h1>
           </Link>
         </div>
-        <div className="text-link">
-          <Link to="/articles">Articles</Link>
+        <div className="links-wrapper">
+          <div className="text-link">
+            <Link to="/articles">Articles</Link>
+          </div>
+          <div className="text-link">
+            <a href="https://github.com/geefuoco">Github</a>
+          </div>
+          <div className="text-link">
+            <a href="https://geefuoco.github.io">Portfolio</a>
+          </div>
         </div>
       </div>
     </nav>
