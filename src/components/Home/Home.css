@@ -1,0 +1,8 @@
+.intro-summary {
+  max-width: 400px;
+  margin: auto;
+}
+
+.intro-summary p{
+  line-height: 2.5;
+}
