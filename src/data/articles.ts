@@ -1,5 +1,6 @@
 type Article = {
   id: number;
+  date: Date;
   title: string;
   body: string;
   sources?: string[];
@@ -14,8 +15,8 @@ const computer_vision = {
 don't want to do. But what if that wasn't the case ? The ongoing research and
 development of neural networks (specifically computer vision) will dramatically
 change the way our lives are lived. This could be robots completing household
-chores like laundry or dishes, self driving cars, or even dangerous jobs like
-logging. All of the examples mentioned may seem like they have nothing to do
+chores like laundry or dishes, cars driving without human intervention, or perhaps 
+taking over dangerous jobs like logging. All of the examples mentioned may seem like they have nothing to do
 with one another, but in fact they will all be built on the same foundation of
 computer vision.
 <split>
@@ -73,10 +74,11 @@ only real in books and films. Computer vision is not yet solved, but with the
 many companies working to solve it, and with all the new data gathered every
 day, it may be solved shortly.`,
   sources: [
-    "(https://www.ibm.com/topics/computer-vision)",
-    "(https://www.sas.com/en_ca/insights/analytics/computer-vision.html)",
-    "(https://www.v7labs.com/blog/computer-vision-applications)",
+    "https://www.ibm.com/topics/computer-vision",
+    "https://www.sas.com/en_ca/insights/analytics/computer-vision.html",
+    "https://www.v7labs.com/blog/computer-vision-applications",
   ],
+  date: new Date("2022-06-21"),
 };
 
 articles.push(computer_vision);
