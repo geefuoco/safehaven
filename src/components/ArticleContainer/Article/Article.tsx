@@ -12,7 +12,6 @@ const Article: React.FC = () => {
       return undefined;
     } else if (str.trim().startsWith("#")) {
       let size = Number(str[2]);
-      // console.log(`header_${i}`);
       switch (size) {
         case 1:
           return (
@@ -65,7 +64,6 @@ const Article: React.FC = () => {
           {split[0]}
         </p>
       );
-      // console.log(`paragraph_${i}`);
       let elements: JSX.Element[] = [];
       let count = 1;
       for (let li of split.slice(1)) {
@@ -75,9 +73,7 @@ const Article: React.FC = () => {
             {li}
           </li>
         );
-        // console.log(`inner_list_${i + count}`);
       }
-      // console.log(`list_${i}`);
       return (
         <>
           {paragraph}
@@ -85,7 +81,6 @@ const Article: React.FC = () => {
         </>
       );
     } else {
-      // console.log(`paragraph_${i}`);
       return (
         <p className="article-body" key={`paragraph_${i}`}>
           {str}
@@ -94,12 +89,29 @@ const Article: React.FC = () => {
     }
   });
 
+  const sources = article?.sources?.map((source, i) => {
+    return (
+      <li key={`source_${i}`} className="article-source">
+        <a href={source} target="_blank">
+          {source}
+        </a>
+      </li>
+    );
+  });
+
   return (
     <article>
       {(article && (
         <>
           <h3 className="article-title">{article.title}</h3>
           {body}
+          {sources && (
+            <>
+              <hr />
+              <h3>Sources</h3>
+              <ul>{sources}</ul>
+            </>
+          )}
         </>
       )) || <h1>Article Not Found</h1>}
     </article>

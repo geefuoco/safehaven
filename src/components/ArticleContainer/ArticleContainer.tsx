@@ -8,11 +8,17 @@ const ArticleContainer: React.FC = () => {
   const article_containers: JSX.Element[] = articles.map((arr) => {
     return (
       <div className="article-link" key={arr.id}>
-        <Link to={`/articles/${arr.id}`}>{arr.title}</Link>
+        - <Link to={`/articles/${arr.id}`}>{arr.title}</Link> (
+        {arr.date.toLocaleDateString("en-US")})
       </div>
     );
   });
-  return <main>{article_containers}</main>;
+  return (
+    <main className="article-container">
+      <h2 className="article-title">Latest Articles</h2>
+      {article_containers}
+    </main>
+  );
 };
 
 export default ArticleContainer;

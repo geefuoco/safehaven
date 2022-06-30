@@ -1,4 +1,17 @@
 .article-container {
   padding: 12px;
+  padding-left: 0;
   text-align: center;
+}
+
+.article-link {
+  font-size: 16px;
+  padding: 12px;
+  padding-left: 4px;
+  text-align: left;
+}
+
+.article-link a:hover{
+  transition: 200ms;
+  color: #AAFFAA;
 }
