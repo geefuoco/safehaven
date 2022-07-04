@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home: React.FC = () => {
@@ -12,7 +13,7 @@ const Home: React.FC = () => {
       </p>
       <p className="article-body">
         You can view the currently published articles{" "}
-        <a href="/articles">here</a>
+        <Link to="/articles">here</Link>
       </p>
     </main>
   );
