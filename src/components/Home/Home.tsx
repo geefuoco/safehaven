@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       <p className="article-body">
         My name is Gianluca Fuoco. I am a full stack web developer and data
         scientist. Welcome to my safe haven. Here you will find my writings
-        about topics that interest me including software engineering, date
+        about topics that interest me including software engineering, data
         science, technology, and so much more.
       </p>
       <p className="article-body">
